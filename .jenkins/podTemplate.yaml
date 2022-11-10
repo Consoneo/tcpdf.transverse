@@ -24,7 +24,7 @@ spec:
       args:
         - infinity
     - name: zip
-      image: kramos/alpine-zip
+      image: nsnow/zip
       command:
         - sleep
       args:
