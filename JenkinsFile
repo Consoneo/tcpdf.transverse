@@ -9,8 +9,8 @@ pipeline {
         vendor_name = "consoneo"
         project_name = "tcpdf.transverse"
         version = ""
-        composer_repo_snapshot = "https://nexus.consoneo.tech/repository/composer-consoneo-snapshot/packages/upload"
-        composer_repo_release = "https://nexus.consoneo.tech/repository/composer-consoneo-release/packages/upload"
+        composer_repo_snapshot = "https://nexus.consoneo.tech/repository/consoneo-composer-snapshot/packages/upload"
+        composer_repo_release = "https://nexus.consoneo.tech/repository/consoneo-composer-release/packages/upload"
         composer_repo_selected = ""
         package_path = ""
     }
