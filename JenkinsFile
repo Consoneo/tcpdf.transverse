@@ -40,7 +40,7 @@ pipeline {
         stage('archive package') {
             steps {
                 container('zip') {
-                    sh "zip -r -x .git -x examples package.zip ."
+                    sh "zip -r package.zip . -x .git -x examples "
                 }
             }
         }
