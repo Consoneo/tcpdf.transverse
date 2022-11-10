@@ -39,7 +39,7 @@ pipeline {
         }
         stage('archive package') {
             steps {
-                container('curl') {
+                container('zip') {
                     sh "zip -r package.zip ."
                 }
             }

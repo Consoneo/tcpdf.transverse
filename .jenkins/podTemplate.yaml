@@ -23,3 +23,9 @@ spec:
         - sleep
       args:
         - infinity
+    - name: zip
+      image: kramos/alpine-zip
+      command:
+        - sleep
+      args:
+        - infinity
