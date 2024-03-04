@@ -1,6 +1,6 @@
 {
   "name": "consoneo/tcpdf.transverse",
-  "version": "6.2.19.1",
+  "version": "6.2.19.2",
   "homepage": "http://www.tcpdf.org/",
   "type": "library",
   "description": "FORK : TCPDF is a PHP class for generating PDF documents and barcodes.",
