@@ -40,7 +40,7 @@ pipeline {
         stage('archive package') {
             steps {
                 container('zip') {
-                    sh 'zip -r ${vendor_name}-${project_name}-${version}.zip . -x ./.git/**\\* ./examples/**\\*'
+                    sh 'zip -r ${vendor_name}-${project_name}-master.zip . -x ./.git/**\\* ./examples/**\\*'
                 }
             }
         }
