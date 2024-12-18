@@ -40,14 +40,14 @@ pipeline {
         stage('archive package') {
             steps {
                 container('zip') {
-                    sh 'zip -r package . -x ./.git/**\\* ./examples/**\\*'
+                    sh 'zip -r ${vendor_name}-${project_name}-${version}.zip . -x ./.git/**\\* ./examples/**\\*'
                 }
             }
         }
         stage('Publish package') {
             steps {
                 script {
-                    package_path = findFiles(glob: '**/package.zip')[0].path
+                    package_path = findFiles(glob: '**/${vendor_name}-${project_name}-${version}.zip')[0].path
                     container('curl') {
                         withCredentials([usernameColonPassword(credentialsId:'svc-consoneo-jenkins', variable: 'USERPASS')]) {
                             final def (int http_code,
