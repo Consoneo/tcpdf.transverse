@@ -42,7 +42,7 @@ pipeline {
                 script {
                     echo "creation of ${vendor_name}-${project_name}-${package_version}.zip"
                     container('zip') {
-                        sh 'zip -r ${vendor_name}-${project_name}-${package_version}.zip . -x ./.git/**\\* ./examples/**\\*'
+                        sh "zip -r ${vendor_name}-${project_name}-${package_version}.zip . -x ./.git/**\\* ./examples/**\\*"
                     }
                 }
             }
